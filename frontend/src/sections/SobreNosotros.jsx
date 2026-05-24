@@ -1,14 +1,15 @@
 import styles from '../styles/SobreNosotros.module.css'
 
+
 const cardPastores = [
   {
-    img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
+    img:  '/src/assets/images/Pastor.jpeg',
     tag: 'Encargados de obra',
     title: 'Pastor Fabian Mella',
     desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',
   },
   {
-    img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
+    img:  '/src/assets/images/Pastora.jpeg',
     tag: 'Encargados de obra',
     title: 'Pastora Lorena Alianga',
     desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',
@@ -17,13 +18,13 @@ const cardPastores = [
 
 const cardExtras = [
   {
-    img:  '',
+    img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
     tag: 'Nuestra Iglesia',
     title: 'Cultos',
     desc: '',
   },
   {
-    img:  './',
+    img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
     tag: 'Actividades',
     title: '',
     desc: 'Nos guiamos por la Palabra de Dios, la oración y el compañerismo. Cada domingo abrimos nuestras puertas a toda persona que busca un encuentro genuino con Dios.',

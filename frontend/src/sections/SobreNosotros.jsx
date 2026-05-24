@@ -1,15 +1,16 @@
 import styles from '../styles/SobreNosotros.module.css'
-
+import imagenPastor from '../assets/images/Pastor.jpeg'
+import imagenPastora from '../assets/images/Pastora.jpeg'
 
 const cardPastores = [
   {
-    img:  '/src/assets/images/Pastor.jpeg',
+    img: imagenPastor,
     tag: 'Encargados de obra',
     title: 'Pastor Fabian Mella',
     desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',
   },
   {
-    img:  '/src/assets/images/Pastora.jpeg',
+    img:  imagenPastora,
     tag: 'Encargados de obra',
     title: 'Pastora Lorena Alianga',
     desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',

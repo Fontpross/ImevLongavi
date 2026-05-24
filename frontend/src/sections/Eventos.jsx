@@ -1,14 +1,16 @@
 import { useState, useEffect, useCallback } from 'react'
 import styles from '../styles/Eventos.module.css'
+import enlaIntimidad from '../assets/images/EventoEnLaIntimidad.jpeg'
+import imgJueves from '../assets/images/ImgJueves.jpeg'
 
 const fotos = [
   {
-    img: '/src/assets/images/EventoEnLaIntimidad.jpeg',
+    img: enlaIntimidad,
     tag: 'Evento de mujeres',
     title: 'En la intimidad con el amado — 11 de julio a las 17:00 Hrs',
   },
   {
-    img: '/src/assets/images/ImgJueves.jpeg',
+    img: imgJueves,
     tag: 'Culto Presencial',
     title: 'Jueves de Gratitud — Desde las 20:00 Hrs en adelante año 2026',
   },

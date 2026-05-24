@@ -1,0 +1,206 @@
+/* src/styles/Footer.module.css */
+
+.footerWrap {
+  background: #1a0305;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+/* ── TOP SECTION ── */
+.footerTop {
+  background: linear-gradient(180deg, #6b0a12 0%, #3d0408 60%, #1a0305 100%);
+  padding: 3rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.footerTop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d4a017, #f0c040, #d4a017, transparent);
+}
+
+
+
+.brandName {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f0c040;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.2rem;
+}
+
+.brandSub {
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  color: #e8c0c5;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.brandMotto {
+  font-size: 0.85rem;
+  color: #f0c040;
+  font-style: italic;
+  border-left: 2px solid #8b1a20;
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.verse {
+  font-size: 0.75rem;
+  color: #c8909a;
+  line-height: 1.6;
+}
+
+.verse em {
+  color: #d4a017;
+}
+
+/* ── COLUMNAS ── */
+.colTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f0c040;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #5a0a10;
+}
+
+.footerLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footerLinks li a {
+  color: #e8d0d3;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerLinks li a::before {
+  content: '›';
+  color: #8b1a20;
+  font-size: 1rem;
+}
+
+.footerLinks li a:hover {
+  color: #f0c040;
+}
+
+/* ── CONTACTO ── */
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.contactItem span:first-child {
+  font-size: 0.9rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.contactItem span:last-child {
+  color: #e8d0d3;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* ── DIVISOR ── */
+.dividerCross {
+  text-align: center;
+  padding: 1.2rem;
+  color: #8b1a20;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+}
+
+/* ── BOTTOM ── */
+.footerBottom {
+  border-top: 1px solid #3d0408;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copy {
+  font-size: 0.75rem;
+  color: #7a4a50;
+  font-weight: 300;
+  margin: 0;
+}
+
+.copy span {
+  color: #d4a017;
+}
+
+/* ── REDES SOCIALES ── */
+.socialLinks {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialLinks a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #5a0a10;
+  background: #2d0508;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8d0d3;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.socialLinks a:hover {
+  background: #8b1a20;
+  border-color: #f0c040;
+  color: #f0c040;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .footerTop {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+  }
+}

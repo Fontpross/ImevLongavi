@@ -27,9 +27,11 @@ export default function Navbar() {
       {/* DESKTOP MENU */}
       <ul className={styles.navLinks}>
         <li><a href="#hero">Inicio</a></li>
+        <li><a href="#media">Redes Sociales</a></li>
         <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
+        <li><a href="#diasCulto">Días de Culto</a></li>
+        <li><a href="#eventosPasados">Eventos Pasados</a></li>
         <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#contacto" className={styles.contactBtn}>Contacto</a></li>
       </ul>
 
       {/* HAMBURGER MENU */}
@@ -46,9 +48,11 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.active : ''}`}>
         <a href="#hero" onClick={handleLinkClick}>Inicio</a>
+        <a href="#media" onClick={handleLinkClick}>Redes Sociales</a>
         <a href="#sobreNosotros" onClick={handleLinkClick}>Sobre Nosotros </a>
-        <a href="#eventos" onClick={handleLinkClick}>Eventos</a>
-        <a href="#contacto" onClick={handleLinkClick}>Contacto</a>
+        <a href="#diasCulto" onClick={handleLinkClick}>Días de Culto</a>
+        <a href="#eventosPasados" onClick={handleLinkClick}>Eventos Pasados</a>
+        <a href="#eventos" onClick={handleLinkClick}>Eventos</a>  
       </div>
     </nav>
   );

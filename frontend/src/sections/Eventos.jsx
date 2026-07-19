@@ -42,6 +42,9 @@ export default function Eventos() {
     <section className={styles.section} id="eventos">
       <div className={styles.topLine}></div>
 
+      <br />
+      <br />
+      
       <div className={styles.header}>
         <p className={styles.label}>Nuestros</p>
         <h2 className={styles.title}>Proximos Eventos</h2>

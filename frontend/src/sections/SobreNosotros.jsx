@@ -5,36 +5,39 @@ import imagenPastora from '../assets/images/Pastora.jpeg'
 const cardPastores = [
   {
     img: imagenPastor,
-    tag: 'Encargados de obra',
-    title: 'Pastor Fabian Mella',
-    desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',
+    tag: 'Encargado de obra',
+    title: 'Hno. Fabian Mella',
+    desc: 'El Hno. Fabián Mella lidera nuestra congregación con vision, amor y dedicación, edificando vidas y fortaleciendo la fe de nuestra comunidad en Longaví.',
   },
   {
     img:  imagenPastora,
-    tag: 'Encargados de obra',
-    title: 'Pastora Lorena Alianga',
-    desc: 'Dirigidos por el Hno. Fabián Mella y la Hna. Lorena Aliaga, líderes comprometidos con el crecimiento espiritual y el bienestar de cada miembro.',
+    tag: 'Encargada de obra',
+    title: 'Hna. Lorena Aliaga',
+    desc: 'La Hna. Lorena Aliaga, Trabaja comprometida con la congregacion, entregando amor geniuno, servicio, apoyo y fortalecimiento espiritual a nuestra comunidad en Longaví.',
   },
 ]
 
 const cardExtras = [
   {
     img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
-    tag: 'Nuestra Iglesia',
-    title: 'Cultos',
-    desc: '',
+    tag: 'Cuerpo de jovenes',
+    title: 'Cuerpo de jovenes',
+    desc: 'Un espacio dedicado a los jóvenes, donde se fomenta el crecimiento espiritual, la union, la obediencia, la comunión y el servicio a las personas.',
   },
   {
     img:  'https://placehold.co/400x200/6b0a12/ffffff?text=IMEV',
     tag: 'Actividades',
-    title: '',
-    desc: 'Nos guiamos por la Palabra de Dios, la oración y el compañerismo. Cada domingo abrimos nuestras puertas a toda persona que busca un encuentro genuino con Dios.',
+    title: 'Actividades',
+    desc: 'Semana a semana nos reunimos para predicar, orar, ayunar y estudiar la Palabra de Dios. A través del tabernáculo, cultos y nuestros encuentros Presenciales o por Zoom, sigamos creciendo juntos como familia en Cristo.',
   }
 ]
 
 export default function SobreNosotros() {
   return (
     <section className={styles.section} id="SobreNosotros">
+      <br />
+      <br />
+      <div className={styles.topLine}></div>
       <div className={styles.header}>
         <p className={styles.label}>Imev Longavi</p>
         <h2 className={styles.title}>Sobre Nosotros</h2>

@@ -20,7 +20,7 @@ export default function Footer() {
           <ul className={styles.footerLinks}>
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#media">Redes Sociales</a></li>
           </ul>
         </div>
 

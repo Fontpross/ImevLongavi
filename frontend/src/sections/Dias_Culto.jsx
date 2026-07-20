@@ -1,37 +1,37 @@
 import styles from '../styles/DiasCulto.module.css'
-import imgJueves from '../assets/images/ImgJueves.jpeg'
-// import imgDomingo from '../assets/images/domingo-alabanza.jpeg'
-// import imgZoom from '../assets/images/zoom-oracion.jpeg'
+import imgJueves from '../assets/images/CultoJueves.jpeg'
+import imgDomingo from '../assets/images/CultoDomingo.jpeg'
+import imgMiercoles from '../assets/images/TabernaculoMiercoles.jpeg'
 import { FiCalendar, FiClock, FiMapPin, FiVideo } from 'react-icons/fi'
 
 const cultos = [
+    {
+    img: imgMiercoles,
+    tag: 'Reunión online',
+    nombre: 'Zoom de Oración',
+    dia: 'Miércoles de cada semana',
+    hora: '20:00 hrs',
+    lugar: 'Reunión por Zoom',
+    esZoom: true,
+  },
   {
     img: imgJueves,
     tag: 'Cada semana',
     nombre: 'Jueves de Gratitud',
     dia: 'Todos los jueves',
     hora: '20:00 hrs',
-    lugar: 'Las Pataguas #18, Villa Vida Nueva, Longaví',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
   },
   {
-    img: 'https://placehold.co/400x200/6b0a12/ffffff?text=Domingo+de+Alabanza',
+    img: imgDomingo,
     tag: 'Cada semana',
-    nombre: 'Domingo de Alabanza',
+    nombre: 'Domingo de Adoración',
     dia: 'Todos los domingos',
     hora: '11:00 hrs',
-    lugar: 'Las Pataguas #18, Villa Vida Nueva, Longaví',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
-  },
-  {
-    img: 'https://placehold.co/400x200/6b0a12/ffffff?text=Zoom+de+Oracion',
-    tag: 'Reunión online',
-    nombre: 'Zoom de Oración',
-    dia: 'Martes y viernes',
-    hora: '20:00 hrs',
-    lugar: 'Reunión por Zoom — link en redes sociales',
-    esZoom: true,
-  },
+  }
 ]
 
 export default function DiasCulto() {

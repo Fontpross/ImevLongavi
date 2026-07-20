@@ -1,18 +1,18 @@
 import { useState, useEffect, useCallback } from 'react'
 import styles from '../styles/Eventos.module.css'
-import enlaIntimidad from '../assets/images/EventoEnLaIntimidad.jpeg'
-import imgJueves from '../assets/images/ImgJueves.jpeg'
+//import enlaIntimidad from '../assets/images/EventoEnLaIntimidad.jpeg'
+//import imgJueves from '../assets/images/ImgJueves.jpeg'
 
 const fotos = [
   {
-    img: enlaIntimidad,
-    tag: 'Evento de mujeres',
-    title: 'En la intimidad con el amado — 11 de julio a las 17:00 Hrs',
+    img: 'https://placehold.co/400x200/6b0a12/ffffff?text=Eventos+No+Disponibles',
+    tag: 'Eventos no disponibles',
+    title: 'Eventos por confirmar hasta próxima fecha',
   },
   {
-    img: imgJueves,
-    tag: 'Culto Presencial',
-    title: 'Jueves de Gratitud — Desde las 20:00 Hrs en adelante año 2026',
+    img: 'https://placehold.co/400x200/6b0a12/ffffff?text=Eventos+No+Disponibles',
+    tag: 'Eventos no disponibles',
+    title: 'Eventos por confirmar hasta próxima fecha',
   },
   // {
   //   img: '/src/assets/images/evento3.jpg',

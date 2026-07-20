@@ -56,7 +56,7 @@ export default function SobreNosotros() {
               <p className={styles.cardTag}>{card.tag}</p>
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardDesc}>{card.desc}</p>
-              <a href="#contacto" className={styles.cardBtn}>Contáctanos</a>
+              <a href="#media" className={styles.cardBtn}>Contáctanos</a>
             </div>
           </div>
         ))}
@@ -70,7 +70,7 @@ export default function SobreNosotros() {
               <p className={styles.cardTag}>{card.tag}</p>
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardDesc}>{card.desc}</p>
-              <a href="#contacto" className={styles.cardBtn}>Contáctanos</a>
+              <a href="#media" className={styles.cardBtn}>Contáctanos</a>
             </div>
           </div>
         ))}

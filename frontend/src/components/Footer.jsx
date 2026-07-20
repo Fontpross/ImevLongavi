@@ -1,5 +1,9 @@
 // src/components/Footer.jsx
 import styles from '../styles/Footer.module.css'
+import { FiMapPin, FiUsers } from 'react-icons/fi'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+
+const msg = encodeURIComponent('Hola Pastor Fabian Mella, vengo desde la página web de IMEV Longaví queriendo saber más sobre la iglesia y su congregación.')
 
 export default function Footer() {
   return (
@@ -21,17 +25,20 @@ export default function Footer() {
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
             <li><a href="#media">Redes Sociales</a></li>
+            <li><a href="#diasCulto">Días de Culto</a></li>
+            <li><a href="#eventosPasados">Eventos Pasados</a></li>
+            <li><a href="#eventos">Eventos</a></li>
           </ul>
         </div>
 
         <div>
           <p className={styles.colTitle}>Encuéntranos</p>
           <div className={styles.contactItem}>
-            <span>📍</span>
-            <span>Las Pataguas #18, Villa Vida Nueva, Longaví</span>
+            <span><FiMapPin className={styles.ico}/></span>
+            <span>Callejón los montecinos s/n, Paine, longavi</span>
           </div>
           <div className={styles.contactItem}>
-            <span>👥</span>
+            <span><FiUsers className={styles.ico}/></span>
             <span>Hno. Fabián Mella · Hna. Lorena Aliaga</span>
           </div>
         </div>
@@ -42,9 +49,15 @@ export default function Footer() {
       <div className={styles.footerBottom}>
         <p className={styles.copy}>© 2026 <span>IMEV Longaví</span> — Todos los derechos reservados</p>
         <div className={styles.socialLinks}>
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="WhatsApp">w</a>
+          <a href="https://web.facebook.com/iglesiaimevlongavi" aria-label="Facebook" target="_blank" rel="noreferrer">
+            <FaFacebook size={18} />
+          </a>
+          <a href="https://www.instagram.com/imevlongavi/" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <FaInstagram size={18} />
+          </a>
+          <a href={`https://wa.me/+56949261955?text=${msg}`} aria-label="WhatsApp" target="_blank" rel="noreferrer">
+            <FaWhatsapp size={18} />
+          </a>
         </div>
       </div>
     </footer>

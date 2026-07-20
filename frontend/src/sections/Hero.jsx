@@ -9,9 +9,9 @@ export default function Hero() {
       {/* TEXTO IZQUIERDA */}
       <div className={styles.heroText}>
         <div className={styles.badge}>Iglesia Misionera Esperanza y Vida · Longaví</div>
-        <p className={styles.script}>El año de La,</p>
+        <p className={styles.script}>EL AÑO DE LA</p>
         <h1 className={styles.title}>Edificación</h1>
-        <span className={styles.titleY}>y</span>
+        <span className={styles.titleY}>Y</span>
         <h2 className={styles.title2}>Reivindicación</h2>
         <div className={styles.divider}>
           <div className={styles.dividerLine}></div>

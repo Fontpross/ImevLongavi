@@ -71,6 +71,9 @@
 .sBtnWa { background: rgba(37,211,102,0.15); color: #6ff7a3; border-color: rgba(37,211,102,0.3); }
 .sBtnWa:hover { background: rgba(37,211,102,0.3); }
 
+.sBtnTk { background: rgba(255, 255, 255, 0.08); color: #ffffff; border-color: rgba(255, 255, 255, 0.2); }
+.sBtnTk:hover { background: rgba(255, 255, 255, 0.2); color: #ffffff; }
+
 .year { text-align: center; margin-top: 2.5rem; font-size: 0.7rem; color: rgba(240,192,64,0.4); letter-spacing: 0.3em; font-family: 'Cinzel', serif; }
 
 /* ── RESPONSIVE ── */

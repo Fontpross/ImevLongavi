@@ -1,4 +1,9 @@
 import styles from '../styles/SecMedia.module.css'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaTiktok } from 'react-icons/fa6'
+
+const msg = encodeURIComponent('Hola Pastor Fabian Mella, vengo desde la página web de IMEV Longaví queriendo saber más sobre la iglesia y su congregación.')
+const msg2 = encodeURIComponent('Hola Pastora Lorena Aliaga, vengo desde la página web de IMEV Longaví y quisiera obetener más información sobre el Cuerpo de Jóvenes y la Comunidad.')
 
 const grupos = [
   {
@@ -6,19 +11,22 @@ const grupos = [
     titulo: 'IMEV Longaví',
     sub: 'Iglesia Misionera Esperanza y Vida',
     conocenos: '#SobreNosotros',
-    facebook: 'https://facebook.com/tu-pagina',
-    instagram: 'https://instagram.com/tu-pagina',
-    whatsapp: 'https://wa.me/56912345678',
+    facebook: 'https://web.facebook.com/iglesiaimevlongavi',
+    instagram: 'https://www.instagram.com/imevlongavi/',
+    whatsapp: `https://wa.me/+56949261955?text=${msg}`,
   },
+]
+
+const redesJovenes = [
   {
+
     icono: '✨',
     titulo: 'Cuerpo de Jóvenes',
     sub: 'Juventud IMEV Longaví',
     conocenos: '#SobreNosotros',
-    facebook: 'https://facebook.com/jovenes',
-    instagram: 'https://instagram.com/jovenes',
-    whatsapp: 'https://wa.me/56987654321',
-  },
+    Tiktok: 'https://www.tiktok.com/@cuerpo.de.jovenes_imev',
+    whatsapp: `https://wa.me/+56933876558?text=${msg2}`,
+  }
 ]
 
 export default function SecMedia() {
@@ -47,9 +55,23 @@ export default function SecMedia() {
             <div className={styles.cardDivider}></div>
             <div className={styles.socialBtns}>
               <a href={g.conocenos} className={`${styles.sBtn} ${styles.sBtnConoce}`}>Conócenos</a>
-              <a href={g.facebook} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnFb}`}>Facebook</a>
-              <a href={g.instagram} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnIg}`}>Instagram</a>
-              <a href={g.whatsapp} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnWa}`}>WhatsApp</a>
+              <a href={g.facebook} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnFb}`}> <FaFacebook /> Facebook</a>
+              <a href={g.instagram} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnIg}`}> <FaInstagram /> Instagram</a>
+              <a href={g.whatsapp} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnWa}`}> <FaWhatsapp /> WhatsApp</a>
+            </div>
+          </div>
+        ))}
+
+        {redesJovenes.map((g, i) => (
+          <div className={styles.card} key={i}>
+            <div className={styles.cardIcon}>{g.icono}</div>
+            <h3 className={styles.cardTitle}>{g.titulo}</h3>
+            <p className={styles.cardSub}>{g.sub}</p>
+            <div className={styles.cardDivider}></div>
+            <div className={styles.socialBtns}>
+              <a href={g.conocenos} className={`${styles.sBtn} ${styles.sBtnConoce}`}>Conócenos</a>
+              <a href={g.Tiktok} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnTk}`}> <FaTiktok /> TikTok</a>
+              <a href={g.whatsapp} target="_blank" rel="noreferrer" className={`${styles.sBtn} ${styles.sBtnWa}`}> <FaWhatsapp /> WhatsApp</a>
             </div>
           </div>
         ))}

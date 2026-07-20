@@ -131,6 +131,8 @@
   font-weight: 300;
 }
 
+.ico { color: #f0c040; font-size: 13px; flex-shrink: 0; }
+
 /* ── DIVISOR ── */
 .dividerCross {
   text-align: center;

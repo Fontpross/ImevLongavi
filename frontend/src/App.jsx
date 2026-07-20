@@ -17,7 +17,7 @@ function App() {
         <section id="hero">
           <Hero />
         </section>
-        <section>
+        <section id="media">
          <Media/>
         </section>
         <section id='sobreNosotros'>

@@ -6,21 +6,12 @@ import EventoDeMujeres from '../assets/images/EventoEnLaIntimidad.jpeg'
 
 const eventos = [
   {
-    img: EventoDeMujeres,
-    tag: 'Enero 2026',
-    nombre: 'Evento de Mujeres',
-    dia: 'Realizado el dia 11 de enero',
-    hora: 'A las 17:00 hrs',
-    lugar: 'Las Pataguas #18, Longaví',
-    esZoom: false,
-  },
-  {
     img: '/src/assets/images/evento2.jpg',
     tag: 'Febrero 2026',
     nombre: 'Culto de Edificación',
     dia: 'Realizado el dia 15 de febrero',
     hora: 'A las 20:00 hrs',
-    lugar: 'Las Pataguas #18, Longaví',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
   },
   {
@@ -29,25 +20,16 @@ const eventos = [
     nombre: 'Encuentro Juvenil',
     dia: 'Realizado el dia 8 de marzo',
     hora: 'A las 19:00 hrs',
-    lugar: 'Las Pataguas #18, Longaví',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
   },
   {
-    img: '/src/assets/images/evento4.jpg',
-    tag: 'Abril 2026',
-    nombre: 'Misión Longaví',
-    dia: 'Realizado el dia 20 de abril',
-    hora: 'A las 18:00 hrs',
-    lugar: 'Las Pataguas #18, Longaví',
-    esZoom: false,
-  },
-  {
-    img: '/src/assets/images/evento5.jpg',
-    tag: 'Mayo 2026',
-    nombre: 'Tabernáculo General',
-    dia: 'Realizado el dia 3 de mayo',
-    hora: 'A las 20:00 hrs',
-    lugar: 'Las Pataguas #18, Longaví',
+    img: EventoDeMujeres,
+    tag: 'Julio 2026',
+    nombre: 'Evento de Mujeres',
+    dia: 'Realizado el dia 11 de julio',
+    hora: 'A las 17:00 hrs',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
   },
 ]
@@ -55,6 +37,7 @@ const eventos = [
 export default function EventosPasados() {
   const [idx, setIdx] = useState(0)
   const [cardWidth, setCardWidth] = useState(0)
+  const [visible, setVisible] = useState(3)
   const trackRef = useRef(null)
 
   useEffect(() => {
@@ -64,6 +47,11 @@ export default function EventosPasados() {
       if (!card) return
       const gap = 19.2
       setCardWidth(card.offsetWidth + gap)
+
+      const trackWidth = trackRef.current.offsetWidth
+      const vis = Math.round(trackWidth / (card.offsetWidth + gap))
+      setVisible(vis)
+      setIdx(0)
     }
 
     calcWidth()
@@ -71,7 +59,7 @@ export default function EventosPasados() {
     return () => window.removeEventListener('resize', calcWidth)
   }, [])
 
-  const next = () => { if (idx < eventos.length - 1) setIdx(idx + 1) }
+  const next = () => { if (idx < eventos.length - visible) setIdx(idx + 1) }
   const prev = () => { if (idx > 0) setIdx(idx - 1) }
 
   return (
@@ -116,7 +104,7 @@ export default function EventosPasados() {
         </div>
 
         <button className={`${styles.btn} ${styles.prev}`} onClick={prev} aria-label="Anterior" disabled={idx === 0}>‹</button>
-        <button className={`${styles.btn} ${styles.next}`} onClick={next} aria-label="Siguiente" disabled={idx >= eventos.length - 1}>›</button>
+        <button className={`${styles.btn} ${styles.next}`} onClick={next} aria-label="Siguiente" disabled={idx >= eventos.length - visible}>›</button>
       </div>
     </section>
   )

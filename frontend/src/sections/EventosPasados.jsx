@@ -2,24 +2,27 @@ import styles from '../styles/EventosPasados.module.css'
 import { FiCalendar, FiClock, FiMapPin, FiVideo } from 'react-icons/fi'
 import { useState, useRef, useEffect } from 'react'
 
+// Fotos de eventos
+import EventoMayo from '../assets/images/EventoPasadoExtensionMayo.jpeg'
 import EventoDeMujeres from '../assets/images/EventoEnLaIntimidad.jpeg'
 
+
 const eventos = [
-  {
-    img: '/src/assets/images/evento2.jpg',
-    tag: 'Febrero 2026',
-    nombre: 'Culto de Edificación',
-    dia: 'Realizado el dia 15 de febrero',
-    hora: 'A las 20:00 hrs',
-    lugar: 'Callejón los montecinos s/n, Paine, longavi',
-    esZoom: false,
-  },
-  {
+    {
     img: '/src/assets/images/evento3.jpg',
     tag: 'Marzo 2026',
     nombre: 'Encuentro Juvenil',
     dia: 'Realizado el dia 8 de marzo',
     hora: 'A las 19:00 hrs',
+    lugar: 'Callejón los montecinos s/n, Paine, longavi',
+    esZoom: false,
+  },
+  {
+    img: EventoMayo,
+    tag: 'Mayo 2026',
+    nombre: 'Extensión de Mayo',
+    dia: 'Realizado el dia 1 de mayo',
+    hora: 'A las 20:00 hrs',
     lugar: 'Callejón los montecinos s/n, Paine, longavi',
     esZoom: false,
   },
